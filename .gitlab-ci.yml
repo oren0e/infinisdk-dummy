@@ -132,7 +132,7 @@ push-to-github:
   variables:
     BUNDLE_NAME: infradev
     BUNDLE_VERSION: master
-    RUN_ITZIK_PARAMETERS: --no-dev --src $INSTALL_DIR --bundle $BUNDLE_NAME --bundle-version $BUNDLE_VERSION --curr-branch oepshtain/INFRADEV-16487
+    RUN_ITZIK_PARAMETERS: --no-dev --src $INSTALL_DIR --bundle $BUNDLE_NAME --bundle-version $BUNDLE_VERSION --curr-branch $CI_COMMIT_REF_NAME
   stage: release
   when: manual
   before_script:

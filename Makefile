@@ -1,3 +1,4 @@
+# test
 all:
 	@echo "Please specify target"
 	@exit 2
